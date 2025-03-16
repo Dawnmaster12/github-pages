@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlatzkopfCoin Pre-Sale</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/solana-web3.js/1.31.0/solana-web3.min.js"></script>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(255, 200, 0, 0.7);
+        }
+        .button {
+            padding: 15px 25px;
+            background: #ffc800;
+            color: #222;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #e0a500;
+        }
+        .progress {
+            margin-top: 20px;
+            background: #ddd;
+            border-radius: 10px;
+            height: 25px;
+            width: 100%;
+            position: relative;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: #ffc800;
+            border-radius: 10px;
+            transition: width 0.5s;
+        }
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+        .wallet-list {
+            text-align: left;
+            background: #eee;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .roadmap, .story, .allocation {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .roadmap h2, .story h2, .allocation h2 {
+            color: #ff6600;
+        }
+        .telegram-link {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .telegram-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .telegram-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.imgur.com/PQJG1aF.png" alt="GlatzkopfCoin Logo" class="logo">
+        <h1 style="color: #ff6600;">GlatzkopfCoin Pre-Sale</h1>
+        <p>Die Zukunft ist Kahl – sichere dir jetzt GlatzkopfCoins!</p>
+        <h3>Gesammelte Spenden:</h3>
+        <div class="progress">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <p id="progress-text">0 / 100,000 SOL Raised</p>
+        <h3>Sende SOL an:</h3>
+        <p style="font-size: 18px; font-weight: bold; color: #ff6600;">AzkZQfYdBr91qNG1zYWQX4iMTAbQQCu6VwnE7SVbsir</p>
+        <button class="button" onclick="connectWallet()">Phantom Wallet verbinden</button>
+        <p>Verbundene Wallet: <span id="walletAddress">Nicht verbunden</span></p>
+        <h3>Investoren:</h3>
+        <div id="wallet-list" class="wallet-list"></div>
+        
+        <div class="story">
+            <h2>Die GlatzkopfCoin Geschichte</h2>
+            <p>Vor Jahrhunderten galten Glatzen als Symbol von Weisheit und Macht. Heute sind sie der Beweis für finanzielle Intelligenz! Wer sich eine Glatze schneidet, spart Geld für Shampoo – und investiert stattdessen in GlatzkopfCoin!</p>
+            <p>Aber das Beste? Sobald der Wert explodiert, kannst du mit deinem Gewinn nach Istanbul fliegen und dir eine Haartransplantation gönnen! 🚀💈</p>
+            <p>GlatzkopfCoin ist der erste Coin, der nicht nur dein Vermögen wachsen lässt, sondern vielleicht auch deine Haare! 😂</p>
+        </div>
+        
+        <div class="allocation">
+            <h2>Token-Verteilung</h2>
+            <p>💰 70% für die Community – Das Herzstück von GlatzkopfCoin! Jeder, der investiert, wird Teil der kahlköpfigen Elite!</p>
+            <p>🔧 30% für die Weiterentwicklung – Damit GlatzkopfCoin nicht nur auf deinem Kopf, sondern auch auf dem Markt glänzt!</p>
+        </div>
+        
+        <div class="roadmap">
+            <h2>Roadmap</h2>
+            <ul>
+                <li>🚀 Q1: GlatzkopfCoin Entwicklung & Launch</li>
+                <li>🔥 Q2: Meme-Explosion & Influencer-Kollaborationen</li>
+                <li>💎 Q3: Listing auf Top-Börsen & Community-Gewinnspiele</li>
+                <li>🌕 Q4: GlatzkopfCoin zur Mondlandung (und vielleicht ein paar Haarwuchsmittel?)</li>
+            </ul>
+        </div>
+        
+        <p class="telegram-link">📢 Trete unserer Community bei: <a href="https://t.me/ELONPUMPGETRICH" target="_blank">Telegram</a></p>
+    </div>
+</body>
+</html>
